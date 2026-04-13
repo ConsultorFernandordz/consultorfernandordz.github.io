@@ -645,8 +645,15 @@ body{font-family:'Outfit',sans-serif;background:var(--obs);color:var(--pearl);ov
     <div class="footer-copy">© 2025 · Todos los derechos reservados · Monterrey, NL</div>
   </div>
 </div>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function irPg(id,btn){
   document.querySelectorAll('.pg').forEach(function(p){p.classList.remove('on');});
-  document.querySelectorAll('.nav-lnk').forEach(function(l){l.classList.remove('o
+  document.querySelectorAll('.nav-lnk').forEach(function(l){l.classList.remove('on');});
+  var pg=document.getElementById('pg-'+id);
+  if(pg)pg.classList.add('on');
+  if(btn)btn.classList.add('on');
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
